@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Submundo da Programação</title>
-    
-<link rel="stylesheet" href="style.css">
+    <title>Submundo da Programação - Site de exemplo</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   
   <body>
@@ -13,8 +12,6 @@
       <div class="logo">Plataforma de Aulas - Jogos Digitais</div>
       <nav>
         <ul>
-          <li><a href="#inicio">Santuário do Programador</a></li>
-          <li><a href="#sobre">Manifesto do Código</a></li>
           <li><a href="#contato">Invocando nas Trevas</a></li>
         </ul>
       </nav>
@@ -23,7 +20,7 @@
     <main>
       <section class="hero" id="inicio">
         <div class="hero-content">
-          <h1>A Noite É Nossa</h1>
+          <h1>A Noite é Nossa</h1>
           <p>Catedral do Metal &amp; Consumo Energético</p>
         </div>
       </section>
@@ -31,7 +28,7 @@
       <section class="content-section" id="sobre">
         <div class="card">
           <div class="icon">☠️</div>
-          <h2>Estetica Mortal</h2>
+          <h2>Estética Mortal</h2>
           <p>
             Inspirados pela grandiosidade das catedrais góticas e pela crueza
             das catacumbas. Onde as sombras se encontram com a distorção das
@@ -56,6 +53,24 @@
             trilha sonora perfeita para a desolação contemporânea.
           </p>
         </div>
+
+<div class="terminal-window">
+  <div class="terminal-header">
+    <span class="dot red"></span>
+    <span class="dot yellow"></span>
+    <span class="dot green"></span>
+    <span class="terminal-title">fonte monster — css</span>
+  </div>
+  <div class="terminal-body">
+    <pre><code>@font-face {
+  font-family: "Green Energy";
+  src:
+    url("Green Energy.ttf") format("truetype"),
+    url("https://static.wfonts.com/data/2016/05/22/green-energy/Green%20Energy.ttf") format("truetype");
+  font-display: swap;
+}</code></pre>
+  </div>
+</div>
       </section>
     </main>
 
@@ -72,8 +87,6 @@
 
       const toggleHeaderVisibility = () => {
         if (!header) return;
-
-        // Se rolar mais de 60px pra baixo, esconde o header
         if (window.scrollY > 60) {
           header.classList.add("header-hidden");
         } else {
