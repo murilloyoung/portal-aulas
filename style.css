@@ -1,3 +1,4 @@
+
 @font-face {
 font-family: "Green Energy";
 src:
@@ -51,6 +52,70 @@ header {
   transition:
     transform 0.35s ease,
     opacity 0.35s ease;
+}
+
+/* Janela Principal do Terminal */
+.terminal-window {
+  background-color: #0d1110;
+  border: 1px solid #1b382b;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 255, 102, 0.05);
+  font-family: "Fira Code", "Courier New", Courier, monospace;
+  max-width: 700px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+/* Barra Superior do Terminal */
+.terminal-header {
+  background-color: #16221d;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #1b382b;
+  position: relative;
+}
+
+/* Botões do Canto Esquerdo */
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+/* Título Centralizado */
+.terminal-title {
+  color: #4e8062;
+  font-size: 13px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+}
+
+/* Corpo do Código */
+.terminal-body {
+  padding: 18px;
+  overflow-x: auto;
+}
+
+.terminal-body pre {
+  margin: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.terminal-body code {
+  color: #00ff66; /* Verde fosforescente */
+  font-size: 14px;
+  line-height: 1.6;
+  text-shadow: 0 0 5px rgba(0, 255, 102, 0.3); /* Efeito de brilho fosforescente */
 }
 
 header.header-hidden {
